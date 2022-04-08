@@ -9,8 +9,8 @@ class Hobbit {
 
   celebrateBirthday() {
     this.age += 1;
-    this.adult = (this.age > 32);
-    this.old = (this.age > 100);
+    this.adult = this.age > 32;
+    this.old = this.age > 100;
   }
 
   getRing() {

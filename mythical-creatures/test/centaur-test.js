@@ -3,16 +3,19 @@ var Centaur = require('../exercises/centaur');
 
 describe('Centaur', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Centaur);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     // instantiate a Centaur object with an object as an argument. The object should have a key of name and value of your name
     // instantiate another Centaur object with a different name
-
+    var centaur1 = new Centaur({ name: 'Oz' })
+    var centaur2 = new Centaur({ name: 'Mary' })
     // assert that the first centaur's name is your name
     // assert that the second centaur's name is the other name
+    asser.equal(centaur1.name, 'Oz')
+    asser.equal(centaur2.name, 'Mary')
 
     //NOTE: We will not ask you to write your own tests in a mod 1 assessment, but it is good practice to prepare for mod 2!
   });
